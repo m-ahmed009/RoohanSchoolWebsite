@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Roohan Public School</title>
+    <link rel="shortcut icon" href="favicon-16x16.png">
+
+<style>
+
+    /* Admission-section */
+    .contact-section {
+    height: 50rem;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0px;
+    color: #fff;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add box shadow */
+    animation: fadeIn 1s ease;
+    /* Add fadeIn animation */
+}
+
+/* contact-section */
+input[type="text"],
+select {
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #9e9e9e;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none !important;
+}
+
+/* inquiry-section-address */
+input[type="email"],
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    margin-bottom: 15px;
+    /* Add some spacing between fields */
+    padding: 10px;
+    border: 1px solid #9e9e9e;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none !important;
+    width: 100%;
+    /* Make fields responsive and fill the container */
+}
+
+
+
+/* Style the button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add fadeIn animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+        /* width: 100%; */
+    }
+}
+
+
+
+/* Admission-form */
+
+
+
+/* Map-section */
+.map-section {
+    padding: 50px 0;
+    position: relative;
+    background-image: url(bg2.png);
+    background-color: #fff100;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    margin-top: 0px;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+}
+
+.map-container {
+    height: 400px;
+    /* Set the desired height for the map */
+}
+
+/* Style for the right side content */
+.right-content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    margin: 20px 0;
+}
+
+.divider .elementor-divider-separator {
+    border: 1px solid #ccc;
+}
+
+.divider i {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.right-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Map-section */
+</style>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header-section">
+        <!-- Phone Numbers -->
+        <div class="phone-column">
+            <a href="tel:UAN%20111-ASPIRE(277-473)" class="phone-link">
+                <i aria-hidden="true" class="fas fa-phone-alt phone-icon"></i>
+                <span class="phone-text">UAN 111-ASPIRE(277-473)</span>
+            </a>
+        </div>
+        <div class="phone-column2">
+            <a href="tel:+%2092%2042%2035784185-9" class="phone-link">
+                <i aria-hidden="true" class="fas fa-phone-alt phone-icon"></i>
+                <span class="phone-text">Parent Helpline: +92 42 35784185-9</span>
+            </a>
+        </div>
+
+        <!-- Email Address -->
+        <div class="email-column">
+            <a href="mailto:Info@savvyschool.edu.pk" class="email-link">
+                <i aria-hidden="true" class="fas fa-envelope email-icon"></i>
+                <span class="email-text">Email: Info@savvyschool.edu.pk</span>
+            </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-link">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link">
+                <i class="fab fa-facebook social-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link">
+                <i class="fab fa-linkedin social-icon"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Header -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Large Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="logbg.png" alt="Logo" width="85" height="30">
+            </a>
+
+            <!-- Toggle Icon for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div id="navbarNav" class="offcanvas">
+            <!-- Close Button -->
+            <button  id="closeNav" class="close-button mt-3 mb-3">
+                <span>&times;</span>
+            </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item text-uppercase" href="about.html">Message by principle</a>
+                            <a class="dropdown-item text-uppercase" href="about.html">Message from principle</a>
+                            <a class="dropdown-item text-uppercase" href="about.html">Vission</a>
+                            <a class="dropdown-item text-uppercase" href="about.html">Mission</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreInfoDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Curriculum
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="moreInfoDropdown">
+                            <a class="dropdown-item text-uppercase" href="classes.html">Classes Shedule</a>
+                            <a class="dropdown-item text-uppercase" href="exam.html">Exam Shedule</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreInfoDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More info
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="moreInfoDropdown">
+                            <a class="dropdown-item text-uppercase" href="announcement.html">Announcement</a>
+                            <a class="dropdown-item text-uppercase" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item text-uppercase" href="faqs.html">Faqs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+
+    <!-- Admission-Form -->
+    <section class="contact-section text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-left mb-5" style="margin-top: 110px;">
+                    <h5 class="text-primary info-text" style="width: 63px;">INFORMATION</h5>
+                    <h2 class="display-4 text-dark fw-bold text-uppercase">Students</h2>
+                    <!-- <a href="#contact-form" class="btn btn-primary btn-lg">Click Here</a> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form" id="contact-form">
+                        <div class="contact-custom">
+                            <h2 class="mb-2 mt-5 text-dark custom-h2">Admission Form</h2>
+                        </div>
+                        <form class="mt-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control m-0" id="name" name="name"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control m-0" id="name" name="name"
+                                    placeholder="Contact Number" required>
+                            </div>
+                             <!-- Class Selector -->
+                        <div class="form-group">
+                            <select class="form-control m-0" id="classSelector">
+                                <option value="class1">Select Class</option>
+                                <option value="class2">Class 2</option>
+                                <option value="class3">Class 3</option>
+                                <option value="class4">Class 4</option>
+                            </select>
+                        </div>
+
+                        <!-- City Selector -->
+                        <div class="form-group">
+                            <select class="form-control m-0" id="citySelector">
+                                <option value="city1">Select City</option>
+                                <option value="city2">City 2</option>
+                                <option value="city3">City 3</option>
+                                <option value="city4">City 4</option>
+                            </select>
+                        </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Admission-Form -->
+
+    <!-- Map-section -->
+    <section class="map-section mb-3 ">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left side with Google Map -->
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <!-- Embed your Google Map here (replace with your Google Map embed code) -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7240.805939505324!2d67.24273549999998!3d24.850083000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1695756508993!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- Right side with Details and Divider -->
+                <div class="col-md-6 mt-4  mb-3 order-first ">
+                    <h2 class="mb-4 text-uppercase custom-h2 text-center res-h2">Detail <span style="color: #F14042;"
+                            class="map-text">Information</span></h2>
+                    <div class="elementor-divider">
+                        <span class="elementor-divider-separator">
+                            <div class="elementor-icon elementor-divider__element">
+                                <i aria-hidden="true" class="fas fa-map-marked"></i>
+                            </div>
+                        </span>
+                    </div>
+                    <p class="text-dark">Welcome to The Roohan School Admission Center. Please use this form to apply
+                        for your child’s admission to our network of schools across Pakistan. Please complete the form
+                        with accurate information about your child, and make sure you fill out all fields.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map-section -->
+
+    <!-- Footer -->
+    <section class="">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- About Savvy Section -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <h4 class="custom-h4 text-center">About Savvy</h4>
+                        <div class="col-md-12">
+                            <p class="text-wrap1 text-break text-center">
+                                Savvy is the name of a state-of-the-art platform presenting technological educational
+                                excellence. Designed solely to cater to toddlers and young children alike.
+                            </p>
+                        </div>
+                        <div class="social-icons-footer mb-3">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-2 col-md-6 col-sm-12 col-12">
+                        <h4 class="custom-h4 text-center">Quick Links</h4>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="admission.html">ADMISSION</a></li>
+                            <li><a href="classes.html">CURRICULUM</a></li>
+                            <li><a href="announcement.html">ANNOUNCEMENT</a></li>
+                            <li><a href="reviews.html">REVIEWS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Info Section -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <h4 class="custom-h4 text-center">Quick Info</h4>
+                        <p class="info-item"><i class="fas fa-phone"></i> UAN 111-ASPIRE (277-473)</p>
+                        <p class="info-item"><i class="fas fa-phone"></i> Parent Helpline: +92 42 35784185-9</p>
+                        <p class="info-item"><i class="fas fa-envelope"></i> Email: crmd@savvyschool.edu.pk</p>
+                    </div>
+
+
+                    <!-- Quick Intro Section -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <h4 class="custom-h4 text-center">Quick Intro</h4>
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                                <p class="text-wrap1 text-break text-center">
+                                    Savvy is the name of a state-of-the-art platform presenting technological
+                                    educational
+                                    excellence. Designed solely to cater to toddlers and young children alike.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Copyright Line -->
+        </footer>
+        <div class="footer-gap" style="background-color: #3e4095;">
+            <p class="copyright-text text-center text-light mt-2">ROOHAN SCHOOL © 2023 All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <script>
+        // Students
+        let title5 = document.querySelector('.info-text');
+        let name5 = "INFORMATION"
+        let index5 = 1;
+
+        const typeWriter5 = () => {
+            let new_title5 = name5.slice(0, index5);
+            title5.innerText = new_title5;
+
+            index5 > name5.length ? index5 = 1 : index5++;
+            // index++;
+
+            setTimeout(() => typeWriter5(), 170)
+        }
+        typeWriter5();
+        // Students
+
+        // Maps
+        let title6 = document.querySelector('.map-text');
+        let name6 = "INFORMATION"
+        let index6 = 1;
+
+        const typeWriter6 = () => {
+            let new_title6 = name6.slice(0, index6);
+            title6.innerText = new_title6;
+
+            index6 > name6.length ? index6 = 1 : index6++;
+            // index++;
+
+            setTimeout(() => typeWriter6(), 170)
+        }
+        typeWriter6();
+        // Maps
+    </script>
+
+
+
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</body>
+
+</html>

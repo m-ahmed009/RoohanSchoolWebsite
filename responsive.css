@@ -1,0 +1,182 @@
+/* Adjust the text size and padding for responsiveness */
+@media (max-width: 767px) {
+    .content-section {
+        padding: 40px 0;
+    }
+
+
+    .content-section h2 {
+        font-size: 24px;
+    }
+
+    .content-section p {
+        font-size: 16px;
+    }
+
+    .text-wrap {
+        font-size: 14px;
+    }
+
+    .carousel {
+        max-height: 300px;
+        /* Adjust the maximum height for smaller screens */
+    }
+
+    .header-section {
+        display: none;
+    }
+
+    .container {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    #navbarNav {
+        position: fixed;
+        right: -250px;
+        /* Initially off the screen */
+        top: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #fff;
+        /* Background color of the menu */
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+        /* Add shadow for a nice effect */
+        transition: right 0.3s ease-in-out;
+        /* Animation duration and easing */
+        z-index: 1000;
+    }
+
+    #navbarNav.show {
+        right: 0;
+        /* Slide the menu in when it's active */
+    }
+
+    .h-about {
+        font-size: 16px;
+        overflow: hidden;
+        /* Adjust the font size for smaller screens */
+    }
+
+    .shape-overlay {
+        top: 93%;
+    }
+}
+
+/* // 1024 */
+@media (max-width: 1024px) {
+    .header-section {
+        display: none;
+    }
+
+    .container {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    #navbarNav {
+        position: fixed;
+        right: -250px;
+        /* Initially off the screen */
+        top: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #fff;
+        /* Background color of the menu */
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+        /* Add shadow for a nice effect */
+        transition: right 0.3s ease-in-out;
+        /* Animation duration and easing */
+        z-index: 1000;
+    }
+
+    #navbarNav.show {
+        right: 0;
+        /* Slide the menu in when it's active */
+    }
+
+    .h-about {
+        font-size: 16px;
+        overflow: hidden;
+        /* Adjust the font size for smaller screens */
+    }
+
+    .shape-overlay {
+        top: 93%;
+    }
+
+    .about-h2 {
+        position: relative;
+        left: 80px;
+    }
+    .announcement-banner {    background-position-x: 2rem;}
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    #features .site-heading {
+        text-align: center;
+    }
+    .announcement-banner {    background-position-x: 2rem;}
+
+
+}
+
+/* Add gap between feature boxes for mobile responsiveness */
+@media (max-width: 768px) {
+    .features-items .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .review-banner{height: 100% !important;}
+   
+}
+
+@media (max-width: 1024px) {
+
+
+    #feature-container {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .offset-md-3 {
+        /* margin-left: 5%; */
+        margin-left: 20px;
+    }
+
+
+}
+
+
+
+
+/* Base styles for <p> tag */
+
+/* Responsive styles for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* Responsive styles for even smaller screens (e.g., very small smartphones) */
+@media (max-width: 480px) {
+    p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+}
+
+
+.close-button {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .close-button {
+        display: none;
+    }
+}
