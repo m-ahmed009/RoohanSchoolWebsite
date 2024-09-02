@@ -1,4 +1,4 @@
-#Roohan School Website
+# Roohan School Website
 Overview
 This repository contains the source code for the Roohan School website, a modern, responsive website built using HTML, CSS, and JavaScript. The site is designed to provide a user-friendly and interactive experience for students, parents, and faculty, showcasing important information about the school.
 
